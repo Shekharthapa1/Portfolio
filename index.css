@@ -1,0 +1,95 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary: #1e3a5f;    /* Deep navy blue */
+    --secondary: #14b8a6;  /* Teal green */
+    --bg: #f8fafc;         /* Very light cream */
+    --accent: #fd5e53;     /* Coral */
+    --text: #232946;
+    --blockquote-bg: #eef6f9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+header {
+    background: linear-gradient(90deg, var(--primary) 85%, var(--accent) 100%);
+    color: #fff;
+    padding: 2.2rem 1rem 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary);
+}
+
+header h1 {
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-top: 0.7rem;
+    font-style: italic;
+}
+
+section {
+    max-width: 700px;
+    margin: 2.5rem auto;
+    padding: 1.6rem 2rem;
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 24px 0 rgba(30,58,95,0.09);
+}
+
+.intro strong {
+    color: var(--secondary);
+}
+
+.intro blockquote {
+    background: var(--blockquote-bg);
+    border-left: 5px solid var(--accent);
+    margin: 1.5rem 0;
+    padding: 1.2rem 1.2rem 1.2rem 1.9rem;
+    font-style: italic;
+    color: var(--primary);
+    border-radius: 0.75rem;
+}
+
+.services h2 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.services ul {
+    list-style: square inside;
+    margin-bottom: 1.2rem;
+    color: var(--primary);
+}
+
+.services li {
+    margin-bottom: 0.4rem;
+    font-size: 1.12rem;
+}
+
+.services b {
+    color: var(--accent);
+}
+
+footer {
+    text-align: center;
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    letter-spacing: 1px;
+}
